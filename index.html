@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in JS</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <style>
+       
+
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <button class="hamberger" id="aside" onclick="showCol25()">&#9776;</button>
+        
+        <div class="logo">
+            <div class="mylogo">
+                <img src="src/mylogo2.png" alt="">
+            </div>
+        </div>
+        
+        <div class="search">
+            <input type="text" id="navsearch" placeholder="search here..." class="search" onkeyup="navsearch()">
+        </div>
+        <div class="navmenu">
+            <a href="#" >Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </div>
+        <button class="hamberger" onclick="hamberger()">&#9776;</button>
+    </div>
+
+
+
+
+
+    <div class="row">
+
+        <div class="col-25">
+
+           
+            <h2 style="text-align: center;">100+ Python</h2>
+            <a href="index.html" class="active">Introduction</a>
+
+
+
+
+            <h3 style="padding-bottom: 0;margin-bottom:5px;text-align:center">Web API</h3>
+
+
+        </div>
+
+
+        <div class="col-75">
+            <div class="projectname">
+                <h1>Introduction</h1>
+            </div>
+
+
+            <section class="purpose">
+                <h2>Python</h2>
+                <ul>
+                    <li><strong>Used for Web Develoment.</strong></li>
+                    <li><strong>Software Development</strong></li>
+                    <li><strong>System Scripting</strong></li>
+                    <li><strong>File Handling</strong></li>
+                    <li><strong>AI/Machine Learning</strong></li>
+
+                </ul>
+                <h2>JavaScript</h2>
+                <ul>
+                    <li><strong>Client-Side Interactivity</strong></li>
+                    <li><strong>Asynchronous Communication</strong></li>
+                    <li><strong>Versatility Beyond the web</strong></li>
+                </ul>
+
+                <h2>Main Difference between Python and JavaScript</h2>
+                <ul>
+                    <li><strong>Python</strong> <span>runs on the server side and used applications outside the browser.</span> <strong>JavaScript</strong> <span> runs on the browser</span></li>
+
+                    <li><strong>Python</strong> <span>Generally slower because it is an interpreted language, though it can be optimized and used with C extensions.</span> <strong>JavaScript</strong> <span> Typically faster in web applications because modern browsers come with highly optimized JavaScript engines.</span></li>
+
+                    <li><strong>Python</strong> used try, except and finally. <strong>JavaScript</strong> is used try, catch and finally</li>
+                </ul>
+
+            </section>
+
+
+            <section>
+                <h2>Printing to the Console in Python</h2>
+                <ul>
+                    <pre>
+<code>
+#printing console primarly accomplished with the print function.
+
+# #in Python backtrick characters are not used.
+
+
+print("Hello Shanto\nWeclome to Our python Journey")
+print("Hello Shanto\tWeclome to Our python Journey")
+
+
+name=input("Enter your Name: ")
+age=20
+print("Name:",name, "Age:",age)
+
+print(f"Name {name}")
+
+
+print("I am {}".format(name))
+
+
+#end specifies what to print at the end of the line(default is a newline)
+
+print("Name","age", sep=",", end="!!")
+    
+</code>
+</pre>
+                </ul>
+            </section>
+
+            
+
+
+
+
+            <div class="Application">
+                <h1>🌐Application🈸</h1>
+            </div>
+
+
+
+                <section>
+                    <h2>Input in python</h2>
+                    <ul>
+                        <pre>
+<code>
+number=input("Enter a number: ")
+
+#This is called variabale Casting.
+number=int(number)
+print(type(number))
+
+if(number==5):
+    print("True")
+else:
+    print("False")
+</code>
+</pre>
+                    </ul>
+                </section>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="src/index.js">
+    </script>
+
+
+
+</body>
+
+</html>

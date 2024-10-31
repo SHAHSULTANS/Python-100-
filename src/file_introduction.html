@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Handling Python</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <button class="hamberger" id="aside" onclick="showCol25()">&#9776;</button>
+        
+        <div class="logo">
+            <div class="mylogo">
+                <img src="mylogo2.png" alt="">
+            </div>
+        </div>
+        
+        <div class="search">
+            <input type="text" id="navsearch" placeholder="search here..." class="search" onkeyup="navsearch()">
+        </div>
+        <div class="navmenu">
+            <a href="#" >Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </div>
+        <button class="hamberger" onclick="hamberger()">&#9776;</button>
+    </div>
+
+
+
+
+
+    <div class="row">
+
+        <div class="col-25">
+
+           
+            <h2 style="text-align: center;">100+ Python</h2>
+            <a href="../index.html" >Introduction</a>
+
+
+
+
+            <h3 style="padding-bottom: 0;margin-bottom:5px;text-align:center">File Handling</h3>
+            <a href="file_introduction.html" class="active">file Introduction</a>
+
+
+        </div>
+
+
+        <div class="col-75">
+            <div class="projectname">
+                <h1>Introduction</h1>
+            </div>
+
+
+            <section class="purpose">
+                <h2>Python File Open</h2>
+                <ul>
+
+                    <li><strong>Generating Reports</strong></li>
+                    <li><strong>Web Application</strong></li>
+
+                    <li><strong>Storing and Retrieving Chat Logs</strong></li>
+                    
+
+                </ul>
+                <h2>In JavaScript</h2>
+                <ul>
+                    <li><strong> Using Fetch to Download Files in the Browser</strong></li>
+                    <li><strong> Allowing only read-only access through FileReader.</strong></li>
+
+                    
+                </ul>
+
+
+
+                <h2>Browser</h2>
+                <p>A browser is a client application that allows user to access and interact with web content. It sends requests to servers to retrieve information and displays it to the user</p> 
+
+                <h2>Server</h2>
+                <p>A server is a system that sotres, processes and delivers web content to clients.</p>
+
+            </section>
+
+
+            <section>
+                <h2>Printing to the Console in Python</h2>
+                <ul>
+                    <pre>
+<code>
+#The Open function takes two parameter: filename, mode.
+#The four diffent Mode:
+    #"r"=> Opens file for reading.
+    #"a"=> Opens file for appending, creates the file if doesn't exists.
+    
+    #"w"=> Opens file for writting, creates the file if does not exist.
+    #"x"=> Creates a specified file.
+
+    
+import os   
+print(os.getcwd())
+print(os.listdir())
+
+f=open("Day2/demo.txt", "r")
+print(f.read())
+    f.close()
+    
+</code>
+</pre>
+                </ul>
+            </section>
+
+            
+
+
+
+
+            <div class="Application">
+                <h1>🌐Application🈸</h1>
+            </div>
+
+
+
+                <section>
+                    <h2>Chat History for a Messaging Application</h2>
+                    <p>Saving Chat history so that conversions are stored and can be viewed later.</p>
+                    <ul>
+                        <pre>
+<code>
+#with...as automatically handles opening and closing the file for you. This provides us cleaner code & Error Handling
+
+def SaveChatMessage(user,message):
+    with open("Day2/demo.txt","a") as chat_file:
+        chat_file.write(f"{user}: {message}\n")
+        
+        
+def readFromFile():
+    with open("Day2/demo.txt") as chat:
+        return chat.read()
+        
+SaveChatMessage("Shanto","Welcome to Our Python Tutorial")
+SaveChatMessage("Shanto","You have to focus your goal")
+
+
+print("\n\n")
+print(readFromFile())
+</code>
+</pre>
+                    </ul>
+                </section>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="index.js">
+    </script>
+
+
+
+</body>
+
+</html>

@@ -4,6 +4,7 @@
 
 body{
     margin:0;
+    font-family:"Poppins", sans-serif;
     
     
 }
@@ -14,8 +15,8 @@ li{
     padding-top: 5px;
 
 }
-p,li,code,strong,span,a{
-    line-height: 1.5;
+p,li,code,strong,span,a{ 
+    line-height: 1.4;
 }
 h1{
     text-align: center; /* Center-align headings */
